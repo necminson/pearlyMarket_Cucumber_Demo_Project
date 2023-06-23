@@ -10,5 +10,6 @@ Feature: registered_customer_login
     Examples:
       | username   | email                | password    |
       | johnnydeep | johnnydeep@gmail.com | whereisdeep |
+      | bradpitt   | bradpitt12@gmail.com | whereisbrad |
 
 

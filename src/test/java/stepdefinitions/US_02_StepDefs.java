@@ -43,7 +43,6 @@ public class US_02_StepDefs {
     public void verify_visible(String string) {
         WaitUtils.waitFor(2);
 
-
     }
 
 }
