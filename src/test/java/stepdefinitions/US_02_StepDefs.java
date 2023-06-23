@@ -27,7 +27,7 @@ public class US_02_StepDefs {
         WaitUtils.waitFor(1);
         pearlyRegisterPage.regEmailBox.sendKeys(string2);
         WaitUtils.waitFor(1);
-       pearlyRegisterPage.passwordBox.sendKeys(string3);
+       pearlyRegisterPage.password.sendKeys(string3);
     }
     @Given("user clicks the button to aggree the privacy policy")
     public void user_clicks_the_button_to_aggree_the_privacy_policy() {

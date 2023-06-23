@@ -24,8 +24,8 @@ public class PearlyRegisterPage {
     @FindBy(xpath = "//input[@id='reg_email']")
     public WebElement regEmailBox;
 
-    @FindBy(xpath = "//input[@id='password']")
-    public WebElement passwordBox;
+    @FindBy(xpath = "//input[@id='reg_password']")
+    public WebElement password;
 
     @FindBy(xpath = "//*[@id=\"register-policy\"]")
     public WebElement registerPolicy;
