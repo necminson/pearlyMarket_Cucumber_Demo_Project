@@ -49,6 +49,6 @@ public class US_01_StepDefs {
     @Then("verify user registered successfully")
     public void verifyUserRegisteredSuccessfully() {
         WaitUtils.waitFor(2);
-        //ReusableMethods.verifyElementDisplayed(pearlyRegisterPage.signOutButton);
+        ReusableMethods.verifyElementDisplayed(pearlyRegisterPage.signOutButton);
     }
 }

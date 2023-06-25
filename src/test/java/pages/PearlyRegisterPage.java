@@ -33,7 +33,8 @@ public class PearlyRegisterPage {
     @FindBy(xpath = "//button[@name='register']")// for SIGN UP
     public WebElement signUpButton;
 
-
+    @FindBy(xpath = "//*[text()='Sign Out']")
+    public WebElement signOutButton;
 
 
 }
