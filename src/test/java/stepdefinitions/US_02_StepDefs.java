@@ -22,7 +22,7 @@ public class US_02_StepDefs {
     }
     @Given("user enters {string} and {string} and {string}")
     public void user_enters_and_and(String string, String string2, String string3) {
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(1);
         pearlyRegisterPage.userNameBox.sendKeys(string);
         WaitUtils.waitFor(1);
         pearlyRegisterPage.regEmailBox.sendKeys(string2);
@@ -31,18 +31,17 @@ public class US_02_StepDefs {
     }
     @Given("user clicks the button to aggree the privacy policy")
     public void user_clicks_the_button_to_aggree_the_privacy_policy() {
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(1);
         pearlyRegisterPage.registerPolicy.click();
     }
     @Then("click on the Sign Up button to register.")
     public void click_on_the_sign_up_button_to_register() {
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(1);
         pearlyRegisterPage.signUpButton.click();
     }
     @Then("verify {string} visible.")
     public void verify_visible(String string) {
-        WaitUtils.waitFor(2);
+        WaitUtils.waitFor(1);
 
     }
-
 }
