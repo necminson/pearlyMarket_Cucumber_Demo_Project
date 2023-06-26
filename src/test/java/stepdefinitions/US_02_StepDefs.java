@@ -2,9 +2,11 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.By;
 import pages.PearlyRegisterPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 import utilities.WaitUtils;
 
 public class US_02_StepDefs {
@@ -39,9 +41,11 @@ public class US_02_StepDefs {
         WaitUtils.waitFor(1);
         pearlyRegisterPage.signUpButton.click();
     }
+
     @Then("verify {string} visible.")
     public void verify_visible(String string) {
         WaitUtils.waitFor(1);
+    ReusableMethods.waitForVisibility(pearlyRegisterPage.alreadyExistText,3);
 
     }
 }

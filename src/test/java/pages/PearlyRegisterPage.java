@@ -36,5 +36,6 @@ public class PearlyRegisterPage {
     @FindBy(xpath = "//*[text()='Sign Out']")
     public WebElement signOutButton;
 
-
+    @FindBy(xpath = "//*[text()='An account is already registered with that username. Please choose another.']")
+    public WebElement alreadyExistText;
 }
