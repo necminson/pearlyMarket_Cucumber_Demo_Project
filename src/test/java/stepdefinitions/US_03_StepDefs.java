@@ -24,8 +24,8 @@ public class US_03_StepDefs {
     MyAccountPage myAccountPage = new MyAccountPage();
     BillingAddressPage billingPage = new BillingAddressPage();
     PearlyRegisterPage registerPage = new PearlyRegisterPage();
-    Faker faker = new Faker();
-    String  e_mail = faker.internet().emailAddress();
+    static Faker faker = new Faker();
+    static String  e_mail = faker.internet().emailAddress();
 
     String userName = faker.name().username();
     String passWord = faker.internet().password();
@@ -85,7 +85,7 @@ public class US_03_StepDefs {
     @Then("Verify Email address is filled automatically")
     public void verify_email_address_is_filled_automatically() {
         JSUtils.clickWithTimeoutByJS(billingPage.billingEmail);
-        System.out.println("actualEmail = " + billingPage.billingEmail.getText());
+        System.out.println("actualEmail = " + waitForVisibility(billingPage.billingEmail,5).getText());
         System.out.println("expectedEmail = " + e_mail);
         // assertTrue(billingPage.billingEmail.getText().equals(e_mail));
     }
