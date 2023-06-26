@@ -8,8 +8,9 @@ Feature: registered_customer_login
     Then click on the Sign Up button to register.
     Then verify "An account is already registered with your email address." visible.
     Examples:
-      | username   | email                | password    |
-      | johnnydeep | johnnydeep@gmail.com | whereisdeep |
-      | bradpitt   | bradpitt12@gmail.com | whereisbrad |
+      | username   | email                | password     |
+      | johnnydeep | johnnydeep@gmail.com | whereisdeep  |
+      | bradpitt   | bradpitt12@gmail.com | whereisbrad  |
+      | davidbeck  | beckham@gmail.com    | beckhamdavid |
 
 
