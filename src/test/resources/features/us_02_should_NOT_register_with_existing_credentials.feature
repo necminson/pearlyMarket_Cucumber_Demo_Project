@@ -12,6 +12,6 @@ Feature: registered_customer_login
       | johnnydeep | johnnydeep@gmail.com | whereisdeep  |
       | bradpitt   | bradpitt12@gmail.com | whereisbrad  |
       | davidbeck  | beckham@gmail.com    | beckhamdavid |
-      | fatmanaz   | fatmanaz@gmail.com   | fatmanaz01   |
+      | fatmanaz20 | fatmanaz20@gmail.com | fatmanaz020  |
 
 
