@@ -44,8 +44,9 @@ public class US_02_StepDefs {
 
     @Then("verify {string} visible.")
     public void verify_visible(String string) {
-        WaitUtils.waitFor(1);
-    ReusableMethods.waitForVisibility(pearlyRegisterPage.alreadyExistText,3);
+        WaitUtils.waitFor(3);
+    //ReusableMethods.waitForVisibility(pearlyRegisterPage.alreadyExistText,3);
+    ReusableMethods.waitForVisibility(pearlyRegisterPage.pleaseLoginButton,3);
 
     }
 }

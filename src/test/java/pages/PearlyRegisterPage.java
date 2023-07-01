@@ -38,4 +38,9 @@ public class PearlyRegisterPage {
 
     @FindBy(xpath = "//*[text()='An account is already registered with that username. Please choose another.']")
     public WebElement alreadyExistText;
+
+    @FindBy(xpath = "//a[@class='showlogin']")
+    public WebElement pleaseLoginButton;
+
+
 }
