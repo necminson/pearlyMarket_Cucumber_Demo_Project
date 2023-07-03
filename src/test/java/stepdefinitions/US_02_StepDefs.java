@@ -35,11 +35,13 @@ public class US_02_StepDefs {
     public void user_clicks_the_button_to_aggree_the_privacy_policy() {
         WaitUtils.waitFor(1);
         pearlyRegisterPage.registerPolicy.click();
+
     }
     @Then("click on the Sign Up button to register.")
     public void click_on_the_sign_up_button_to_register() {
         WaitUtils.waitFor(1);
         pearlyRegisterPage.signUpButton.click();
+
     }
 
     @Then("verify {string} visible.")

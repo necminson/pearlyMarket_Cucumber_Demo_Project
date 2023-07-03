@@ -43,4 +43,7 @@ public class PearlyRegisterPage {
     public WebElement pleaseLoginButton;
 
 
+    // ....
+
+
 }
